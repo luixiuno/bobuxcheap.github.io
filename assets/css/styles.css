@@ -21,11 +21,7 @@ body{
   text-decoration: none;
   font-size: 24px;
   width: 100px;
-}
-
-.topnav a.hover{
-  background-color: #ddd;
-  color: black;
+  border-radius: 2px;
 }
 
 .topnav a.active {
@@ -33,9 +29,16 @@ body{
   border-bottom: solid 3px rgba(255,255,255,.70);
 }
 
+.topnav a:hover{
+  background-color: #ddd;
+  color: black;
+}
+
 .box {
   border: solid 1px rgba(255,255,255,.70);
-  padding-left: 24px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding: 5px 20px 5px 20px;
   border-radius: 8px;
   background-color: #22222260;
   font-family: 'Source Code Pro', monospace;
@@ -54,12 +57,14 @@ h1 {
   color: rgba(255,255,255,.70);
 }
 
+
+
+/* Add typing effect to h1 with typing class */
 .typing h1 {
   font-family: 'Source Code Pro', monospace;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: .15em solid rgba(0,255,0,.75); /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0; /* Gives that scrolling effect as the typing happens */
   letter-spacing: .15em; /* Adjust as needed */
   animation: 
     typing 2s steps(30, end),
