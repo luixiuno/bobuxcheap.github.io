@@ -60,6 +60,7 @@ p {
 
 h1 {
   color: rgba(255,255,255,.70);
+  font-family: 'Source Code Pro', monospace;
 }
 
 /* Add typing effect to h1 with typing class */
